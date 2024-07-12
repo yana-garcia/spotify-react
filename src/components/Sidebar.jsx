@@ -4,17 +4,20 @@ import {assets} from '../assets/assets'
 const Sidebar = () => {
   return (
     <div className='w-[25%] h-full p-2 flex-col gap-2 text-white hidden lg:flex'>
-        <div className='bg-[#121212] h-[15%] rouded flex flex-col justify-around'>
-            <div className='flex items-center gap-3 pl-8 cursor-pointer'>
+        <div className='bg-[#121212] h-[25%] rouded flex flex-col justify-around'>
+            <div className='flex items-center gap-3 pl-8 pt-3.5 pb-2 cursor-pointer'>
+                <img className='w-20' src={assets.spotify_logo_sidebar} alt="" />
+            </div>
+            <div className='flex items-center gap-3 pl-8 pt-2 pb-2 cursor-pointer'>
                 <img className='w-6' src={assets.home_icon} alt="" />
                 <p className='font-bold'>Home</p>
             </div>
-            <div className='flex items-center gap-3 pl-8 cursor-pointer'>
+            <div className='flex items-center gap-3 pl-8 pt-2 pb-3.5 cursor-pointer'>
                 <img className='w-6' src={assets.search_icon} alt="" />
                 <p className='font-bold'>Search</p>
             </div>
         </div>
-        <div className='bg-[#121212] h-[85%] rounded'>
+        <div className='bg-[#121212] h-[75%] rounded'>
             <div className='p-4 flex items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img className='w-8' src={assets.stack_icon} alt="" />

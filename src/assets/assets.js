@@ -1,3 +1,4 @@
+import spotify_logo_sidebar from './spotify_logo_sidebar.png';
 import bell_icon from './bell.png'
 import home_icon from './home.png'
 import like_icon from './like.png'
@@ -43,6 +44,7 @@ import song2 from  './song2.mp3'
 import song3 from  './song3.mp3'
 
 export const assets = {
+    spotify_logo_sidebar,
     bell_icon,
     home_icon,
     like_icon,
