@@ -23,6 +23,7 @@ import arrow_right from './right_arrow.png'
 import arrow_left from './left_arrow.png'
 import spotify_logo from './spotify_logo.png'
 import clock_icon from './clock_icon.png'
+import globe_icon from './globe.png'
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
 import img3 from './img3.jpg'
@@ -39,9 +40,14 @@ import img13 from './img13.jpg'
 import img14 from './img14.jpg'
 import img15 from './img15.jpg'
 import img16 from './img16.jpg'
-import song1 from  './song1.mp3'
-import song2 from  './song2.mp3'
-import song3 from  './song3.mp3'
+import espresso from  './espresso.mp3'
+import birdsoffeather from  './birdsoffeather.mp3'
+import please from  './please.mp3'
+import notlikeus from  './notlikeus.mp3'
+import beautifulthings from  './beautifulthings.mp3'
+import goodluckbabe from  './goodluckbabe.mp3'
+import cruelsummer from  './cruelsummer.mp3'
+import rockstar from  './rockstar.mp3'
 
 export const assets = {
     spotify_logo_sidebar,
@@ -68,7 +74,8 @@ export const assets = {
     arrow_left,
     arrow_right,
     spotify_logo,
-    clock_icon
+    clock_icon,
+    globe_icon
 }
 
 export const albumsData = [
@@ -76,42 +83,42 @@ export const albumsData = [
         id:0,
         name: "Top 50 Global",
         image: img8,
-        desc:"Your weekly update of the most played tracks",
+        desc:"Your daily update of the most played tracks right now - Global.",
         bgColor:"#2a4365"
     },
     {   
         id:1,
-        name: "Top 50 India",
+        name: "Viral 50 Global",
         image: img9,
-        desc:"Your weekly update of the most played tracks",
+        desc:"Your daily update of the most viral tracks right now - Global.",
         bgColor:"#22543d"
     },
     {   
         id:2,
-        name: "Trending India",
+        name: "Top Songs USA",
         image: img10,
-        desc:"Your weekly update of the most played tracks",
+        desc:"Your weekly update of the most played tracks right now - USA.",
         bgColor:"#742a2a"
     },
     {   
         id:3,
-        name: "Trending Global",
+        name: "Top Songs Global",
         image: img16,
-        desc:"Your weekly update of the most played tracks",
+        desc:"Your weekly update of the most played tracks right now - Global.",
         bgColor:"#44337a"
     },
     {   
         id:4,
-        name: "Mega Hits,",
+        name: "Mega Hits",
         image: img11,
-        desc:"Your weekly update of the most played tracks",
+        desc:"Your weekly update of the mega hits tracks",
         bgColor:"#234e52"
     },
     {   
         id:5,
         name: "Happy Favorites",
         image: img15,
-        desc:"Your weekly update of the most played tracks",
+        desc:"Your weekly update of your favorites tracks",
         bgColor:"#744210"
     }
 ]
@@ -119,66 +126,66 @@ export const albumsData = [
 export const songsData = [
     {
         id:0,
-        name: "Song One",
+        name: "Espresso",
         image: img1,
-        file:song1,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"3:00"
+        file: espresso,
+        desc:"Sabrina Carpenter",
+        duration:"2:55"
     },
     {
         id:1,
-        name: "Song Two",
+        name: "Birds of Feather",
         image: img2,
-        file:song2,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"2:20"
+        file: birdsoffeather,
+        desc:"Billie Eilish",
+        duration:"3:30"
     },
     {
         id:2,
-        name: "Song Three",
+        name: "Please Please Please",
         image: img3,
-        file:song3,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"2:32"
+        file: please,
+        desc:"Sabrina Carpenter",
+        duration:"3:06"
     },
     {
         id:3,
-        name: "Song Four",
+        name: "Not Like Us",
         image: img4,
-        file:song1,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"2:50"
+        file: notlikeus,
+        desc:"Kendrick Lamar",
+        duration:"4:34"
     },
     {
         id:4,
-        name: "Song Five",
+        name: "Beautiful Things",
         image: img5,
-        file:song2,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"3:10"
+        file: beautifulthings,
+        desc:"Benson Boone",
+        duration:"3:00"
     },
     {
         id:5,
-        name: "Song Six",
-        image: img14    ,
-        file:song3,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"2:45"
+        name: "Good Luck, Babe!",
+        image: img14,
+        file: goodluckbabe,
+        desc:"Chappell Roan",
+        duration:"3:38"
     },
     {
         id:6,
-        name: "Song Seven",
+        name: "Cruel Summer",
         image: img7,
-        file:song1,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"2:18"
+        file: cruelsummer,
+        desc:"Taylor Swift",
+        duration:"2:58"
     },
     {
         id:7,
-        name: "Song Eight",
+        name: "Rockstar",
         image: img12,
-        file:song2,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"2:35"
+        file: rockstar,
+        desc:"LISA",
+        duration:"2:18"
     }
 ]

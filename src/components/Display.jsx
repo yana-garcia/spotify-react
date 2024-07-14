@@ -3,6 +3,10 @@ import {Route, Routes, useLocation} from 'react-router-dom'
 import DisplayHome from './DisplayHome'
 import DisplayAlbum from './DisplayAlbum'
 import { albumsData } from '../assets/assets'
+import DisplayMusic from './DisplayMusic'
+import DisplayPodcast from './DisplayPodcast'
+import DisplaySearch from './DisplaySearch'
+import Navbar from './Navbar'
 
 const Display = () => {
 
@@ -22,11 +26,17 @@ const Display = () => {
     })
 
   return (
-    <div ref={displayRef} className='w-[100%] m-2 px-6 pt-4 rounded bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml-0'>
-        <Routes>
-            <Route path='/spotify-react' element={<DisplayHome />} />
-            <Route path='/spotify-react/album/:id' element={<DisplayAlbum />} />
-        </Routes>
+    <div ref={displayRef} className='w-[100%] rounded bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml-0'>
+        <Navbar />
+        <div className='m-2 px-6'>
+            <Routes>
+                <Route path='/spotify-react/' element={<DisplayHome />} />
+                <Route path='/spotify-react/album/:id' element={<DisplayAlbum />} />
+                <Route path='/spotify-react/music' element={<DisplayMusic />} />
+                <Route path='/spotify-react/podcast' element={<DisplayPodcast />} />
+                <Route path='/spotify-react/search' element={<DisplaySearch />} />
+            </Routes>
+        </div>
     </div>
   )
 }
