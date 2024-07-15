@@ -18,7 +18,7 @@ const Search = () => {
       limit: '50'
 		},
 		headers: {
-			'x-rapidapi-key': '55df86ef1fmshe09604734a42a94p1510fcjsnb290f580f71f',
+			'x-rapidapi-key': '571ba2474cmsh3974ea020ed6b4ap142dc6jsn6e5b8f593888',
 			'x-rapidapi-host': 'spotify23.p.rapidapi.com'
 		}
 		};
@@ -42,7 +42,6 @@ const Search = () => {
     setSpotifyApi(res)
   }
 
-  //form autoComplete='off' className='p-2 text-gray-400 focus-within:text-gray-600'
   return (
     <div>
       <div className='flex flex-row justify-start items-center border-[1px] rounded-full px-3 focus-within:border-2 hover:border-2'>
@@ -56,7 +55,6 @@ const Search = () => {
       </div>
       <div>
         <div className='mb-4'>
-          {/* <h1 className='my-5 font-bold text-2xl'>Trending Songs</h1> */}
           <div className='grid lg:grid-cols-5 md:grid-cols-4 grid-cols-3 pt-5'>
             {spotifyApi.length === 0 
               ? (<h1 className='pt-5 pl-2 text-xl'>NO MUSIC FOUND</h1>)

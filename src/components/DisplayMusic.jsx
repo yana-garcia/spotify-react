@@ -17,11 +17,11 @@ const Music = () => {
 			q: 'a',
 			type: 'multi',
 			offset: '0',
-			limit: '6',
+			limit: '7',
 			numberOfTopResults: '5'
 		},
 		headers: {
-			'x-rapidapi-key': '55df86ef1fmshe09604734a42a94p1510fcjsnb290f580f71f',
+			'x-rapidapi-key': '571ba2474cmsh3974ea020ed6b4ap142dc6jsn6e5b8f593888',
 			'x-rapidapi-host': 'spotify23.p.rapidapi.com'
 		}
 		};
