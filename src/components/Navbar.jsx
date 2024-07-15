@@ -25,8 +25,8 @@ const Navbar = () => {
 
             <div className='w-full flex justify-between items-center font-semibold'>
                 <div className='flex items-center gap-2'>
-                    <img onClick={() => navigate(-1)} className='w-8 bg-black p-2 rounded-2xl cursor-pointer' src={assets.arrow_left} alt="" />
-                    <img onClick={() => navigate(+1)} className='w-8 bg-black p-2 rounded-2xl cursor-pointer' src={assets.arrow_right} alt="" />
+                    <img onClick={() => navigate(-1)} className='w-8 bg-black p-2 rounded-2xl cursor-pointer hover:bg-slate-800' src={assets.arrow_left} alt="" />
+                    <img onClick={() => navigate(+1)} className='w-8 bg-black p-2 rounded-2xl cursor-pointer hover:bg-slate-800' src={assets.arrow_right} alt="" />
                 </div>
                 <div className='flex items-center gap-4'>
                     <p className='bg-white text-black text-[15px] px-4 py-1 rounded-2xl hidden md:block cursor-pointer hover:bg-slate-300'>Explore Premium</p>
@@ -43,6 +43,7 @@ const Navbar = () => {
                 <p onClick={() => handleClick('/spotify-react/')} className={`px-4 py-1 rounded-2xl cursor-pointer ${location.pathname === '/spotify-react/' ? 'bg-white text-black' : 'bg-black text-white hover:bg-slate-800'}`}>All</p>
                 <p onClick={() => handleClick('/spotify-react/music')} className={`px-4 py-1 rounded-2xl cursor-pointer ${location.pathname === '/spotify-react/music' ? 'bg-white text-black' : 'bg-black text-white hover:bg-slate-800'}`}>Music</p>
                 <p onClick={() => handleClick('/spotify-react/podcast')} className={`px-4 py-1 rounded-2xl cursor-pointer ${location.pathname === '/spotify-react/podcast' ? 'bg-white text-black' : 'bg-black text-white hover:bg-slate-800'}`}>Podcasts</p>
+                <p onClick={() => handleClick('/spotify-react/search')} className={`lg:hidden md:block sm:block px-4 py-1 rounded-2xl cursor-pointer ${location.pathname === '/spotify-react/search' ? 'bg-white text-black' : 'bg-black text-white hover:bg-slate-800'}`}>Search</p>
             </div>
         </div>
         </>
